@@ -1,0 +1,173 @@
+/***************************************************
+Add your Google Fonts
+Update ALL the named colours to create a monochromatic scheme
+Style the menus - one horizontally and one vertically
+Add the hover/active effects to your menu items
+***************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Lora|Nunito');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: Lora, Times, "Times New Roman", serif;
+}
+html, body{
+    background-color: #6EFFA1;
+}
+h1{
+    font-size: 6.854rem;
+    /* ADD the Google serif font to this font stack */
+    font-family: Lora, Times, "Times New Roman", serif;
+    padding: 1rem 2rem;
+    color: #297F47;
+}
+h2{
+    font-size: 4.23rem;
+    /* ADD the Google serif font to this font stack */
+  font-family: Lora, Times, "Times New Roman", serif;
+    padding: 1rem 2rem;
+    color: #88FF00;
+}
+nav li{
+    font-size: 2.618rem;
+    color: #3ACC3A;
+     font-family: Lora, Arial, Helvetica, sans-serif;
+}
+p{
+    font-size: 1.618rem;
+    padding: 1rem 2rem;
+    color: #57FF25;
+    font-family: Lora, Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    max-width: 1400px; 
+    width: 80%;
+    margin: 0 auto;
+    background-color: #95CCB0;
+    color: #537F37;
+}
+header{
+    border-bottom: 0.8rem solid #48FF48;
+    background-color: #A5FF6E;
+    color: #6EFFB6;
+}
+/**********Change fonts colours in CSS above****************/
+
+
+
+/******************Horizontal Menu****************/
+.menu-h{
+    width: 100%;
+}
+    .menu-h li{
+        /* style the list items to remove the bullets 
+        and line up horizontally
+        and take up 20% of the width of the ul */
+        list-style:none;
+        float:left;
+        width:20%;
+        
+/*     optional*/
+        text-align: center;
+        line-height: 1.2;
+        border left: 1px solid #333;
+        border-bottom: 1px solid #333;
+        
+        
+    }
+
+
+        .menu-h a,
+        .menu-h a:link,
+        .menu-h a:visited{
+            /* style the anchors to fill the entire width of the li 
+            make sure there is padding around your text */
+            display:block;
+            
+ /*            optional*/
+            color:#007F19;
+            text-decoration: none;
+            
+            cursor: pointer;
+        }
+
+
+
+        .menu-h a:hover,
+        .menu-h a:active{
+          color:#EFF;
+            font-variant-caps:unicase;
+            background color: #145;
+            
+            
+        }
+
+/***********************vetical Menu******************/
+
+
+.menu-v{
+    width: 20%;
+    float:left;
+    
+}
+
+    .menu-v li{
+        /* style the list items to remove the bullets 
+        and line up vertically
+        and take up 100% of the width of the ul */
+        list-style: none;
+        width:100%;
+        
+/*        optional*/
+        
+         text-align: center;
+        line-height: 1.2;
+        border left: 1px solid #333;
+        border-bottom: 1px solid #333;
+       
+        
+    }
+
+
+        .menu-v a,
+        .menu-v a:link,
+        .menu-v a:visited{
+            /* style the anchors to fill the entire width of the li */
+            
+            display:block;
+            
+         /*  optional*/
+            color:#BEFF74;
+            text-decoration: none;
+            
+            text-align: center;
+            
+            cursor: pointer;
+/*            border: 1rem solid transparent;*/
+        }
+
+
+        .menu-v a:hover,
+        .menu-v a:active{
+            color:red;
+            font-variant-caps:all-petite-caps;
+            }
+
+
+
+
+main{
+    width:80%;
+    float: right;
+}
+footer{
+    clear:both;
+}
